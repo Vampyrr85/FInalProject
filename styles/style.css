@@ -14,33 +14,40 @@ h2
     background-image: url("../images/banner.png");
     background-size: cover;
     background-position: center;
-    color: darkseagreen;
+    color: navy;
     text-shadow: 
-        -1px -1px 0 black,  
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black; /* Black border */
+        -1px -1px 0 #c2a36b,  
+        1px -1px 0 #c2a36b,
+        -1px 1px 0 #c2a36b,
+        1px 1px 0 #c2a36b; 
     padding: 2em; 
     margin-bottom: 1em;   
 }
 
-body
+html, body
 {
     background-color: lightsteelblue;
     padding-bottom: 1em;;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .button-links nav
 {
-    width: auto;
+    display: flex;  
+    justify-content: space-evenly;     
 }
 
 .button-links nav ul
 {
     display: flex;
     list-style: none;
+    justify-content: space-evenly;
     margin: 0;
-    padding: 1em 2em 20px 0 !important;
+    padding: 0 !important;
+    
 }
 
 .button-links nav a
@@ -57,7 +64,7 @@ body
 
 .button-links 
 {
-    width: 100%; 
+    width: auto; 
     padding: 0.5em;
     margin-top: 1em;;
     list-style: none;
@@ -108,13 +115,13 @@ aside a
 }
 
 main
-{
-    width: 90%; 
+{    
+    flex: 1;
 }
 
 footer 
 {
-    grid-column: 1 / -1; 
+    
     background-color: #333;
     color: white;
     text-align: center;
@@ -305,7 +312,7 @@ label
 
     .button-links nav a
     {
-        width: auto;
+        width: 300%;
     }
 
     .wrapper
@@ -378,7 +385,7 @@ label
 
     .button-links nav a
     {
-        width: auto;
+        width: 300%;
     }
 
     .wrapper
