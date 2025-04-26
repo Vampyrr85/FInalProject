@@ -37,7 +37,13 @@ html, body
 .button-links nav
 {
     display: flex;  
-    justify-content: space-evenly;     
+    justify-content: space-evenly;
+       
+}
+
+.button-links nav:hover
+{
+    transform: translateY(-2px) scale(1.05);
 }
 
 .button-links nav ul
@@ -46,20 +52,30 @@ html, body
     list-style: none;
     justify-content: space-evenly;
     margin: 0;
-    padding: 0 !important;
-    
+    padding: 0;   
+}
+
+.button-links nav li 
+{
+    display: flex;
+    flex: 1; 
+    margin: 0 20%;
+    justify-content: center; 
+    align-items: center;
 }
 
 .button-links nav a
 {
     text-decoration: none;
     display: inline-block;
-    border:black;
-    padding: 0.5em;
+    padding: 0.5em 1.5em;
     background-color: #720000;
     color: whitesmoke;
-    text-align: center !important;
-    width: 200%;
+    text-align: center;
+    width: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;     
 }
 
 .button-links 
@@ -73,12 +89,6 @@ html, body
     justify-content: space-between; 
     margin: 0; 
     background-color: lightslategray;
-}
-
-.button-links li 
-{
-    flex: 1; 
-    margin: 0 30%; 
 }
 
 aside 
